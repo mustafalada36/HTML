@@ -3,6 +3,6 @@ Files
 
 * HTML codespaces.
 * Images
-		Folder * External Link
+	Folder * External Link
                			*external link
                			*FACEBOOK-PAGES
