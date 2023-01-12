@@ -2,7 +2,7 @@ This HTML repository contain the core topics or concepts of the HTML.
 Files
 
 * HTML codespaces.
-	* Images
+* Images
 		Folder * External Link
                			*external link
                			*FACEBOOK-PAGES
