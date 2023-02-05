@@ -6,3 +6,5 @@ Files//
 	Folder * External Link
                		*external link
                		*FACEBOOK-PAGES
+
+Sections are most important concept in html.
