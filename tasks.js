@@ -29,18 +29,11 @@
  	 
 
  	//Q4
- 	function getnames(){
-		
- 		const firstname = document.getnamebyId("FirstName").value;
- 		const lastname  = document.getnamebyId("LastName").value;
-
- 		return(firstname,lastname);
- 		const form = document.getnamebyId("myform");
-	 	form.addEventListener("submit", function(event) {
-	  	event.preventDefault();
-	  	const names = getnames();
-	  	console.log(names.firstname,names.lastname);
-	  	});
+ 	myfunction = function(){
+ 		var first, second;
+	    first = document.getElementById("firstname").value;
+	    second = document.getElementById("lastname").value;
+ 		document.getElementById("here").innerHTML = first+" "+second;
  	}
- 	//call the function through action listener
+ 	
  	
