@@ -32,10 +32,10 @@
  	function getnames(){
 		
  		const firstname = document.getnamebyId("FirstName").value;
- 		const lastname  = document.getnamebyId("LastName ").value;
+ 		const lastname  = document.getnamebyId("LastName").value;
 
  		return(firstname,lastname);
- 		const form = "myform" ;
+ 		const form = document.getnamebyId("myform");
 	 	form.addEventListener("submit", function(event) {
 	  	event.preventDefault();
 	  	const names = getnames();
