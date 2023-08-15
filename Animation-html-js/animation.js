@@ -24,3 +24,8 @@ function drawBall() {
     context.fill();
 }
 
+function animate(){
+    moveBall();
+    drawBall();
+    window.requestAnimationFrame(animate);
+}
