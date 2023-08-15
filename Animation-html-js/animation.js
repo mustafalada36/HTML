@@ -13,4 +13,14 @@ function moveBall() {
     } else if (position - radius <0){
         moveSpeed = speed
     }
+    position +=moveSpeed;
 }
+
+function drawBall() {
+    context.clearRect( 0 ,0,300,300);
+    context.fillStyle("black");
+    context.beginPath();
+    context.arc(position,50,radius,0,2*Math.PI);
+    context.fill();
+}
+
