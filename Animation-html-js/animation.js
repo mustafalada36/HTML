@@ -5,7 +5,7 @@ let context = canvas.getContext("2d");
 const speed = 4;
 let position = 0;
 let moveSpeed = speed;
-let radius = 40;
+let radius = 60;
 
 function moveBall() {
     if (position + radius > 640) {
@@ -20,7 +20,7 @@ function drawBall() {
     context.clearRect( 0 ,0,640,480);
     context.fillStyle ="#62687f";
     context.beginPath();
-    context.arc(position,50,radius,0,2*Math.PI);
+    context.arc(position,100,radius,0,2*Math.PI);
     context.fill();
 }
 
