@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Form</title>
+</head>
+<body>
+    <!-- Your form HTML -->
+    <form id="myForm">
+        <!-- First Input: Username -->
+        <label for="usernameLabel">Username:</label>
+        <input type="text" id="usernameInput" name="usernameInput" required>
+
+        <!-- Second Input: MyJobs -->
+        <label for="myJobsLabel">MyJobs</label>
+        <input type="text" id="myJobsInput" name="myJobsInput" required>
+
+        <!-- Submit Button -->
+        <button type="button" onclick="submitForm()">Submit</button>
+        
+        <!-- Result Display -->
+        <div id="result"></div>
+    </form>
+
+    <script>
+        // Function to handle form submission
+        function submitForm() {
+            // Get values from the form
+            const usernameLabel = document.querySelector('label[for="usernameInput"]');
+            const myJobsLabel = document.querySelector('label[for="myJobsInput"]');
+            const usernameValue = document.getElementById('usernameInput').value;
+            const myJobsValue = document.getElementById('myJobsInput').value;
+
+            // Display the labels and values on the page
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `${usernameLabel}: ${usernameValue}<br>${myJobsLabel}: ${myJobsValue}`;
+        }
+    </script>
+</body>
+</html>
